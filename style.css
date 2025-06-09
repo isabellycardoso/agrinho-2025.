@@ -1,0 +1,232 @@
+/* style.css */
+
+
+body {
+    font-family: sans-serif;
+    background-color: #e3f2fd; /* Light blue-ish gray background */
+    color: #212529; /* Dark gray text */
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.cabecalho {
+    background-color: #81c784; /* A softer green */
+    color: white;
+    padding: 2rem 0;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.cabecalho h1 {
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.cabecalho h3 {
+    font-size: 1.2rem;
+    font-weight: normal;
+}
+
+.navbar {
+    margin-bottom: 1.5rem;
+}
+
+.navbar-nav .nav-link {
+    font-weight: bold;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    color: white !important; /* Ensure text is white */
+}
+
+.navbar-nav .nav-link:hover {
+    color: #dcedc8 !important; /* Lighter green on hover */
+}
+
+.navbar-nav .nav-link.active {
+    color: #689f38 !important; /* A darker, more prominent green for active */
+}
+
+.navbar-toggler {
+    border-color: rgba(255, 255, 255, 0.1);
+}
+
+.navbar-toggler-icon {
+    background-image: url("data:image/svg+xml,%3csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3e%3cpath stroke='rgba(255, 255, 255, 0.5)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+
+.container {
+    flex-grow: 1;
+    padding: 2rem;
+}
+
+.alinha {
+    text-align: justify;
+}
+
+.img-agro {
+    max-width: 100%;
+    height: auto;
+    border-radius: 0.5rem;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+}
+
+.pt-5 {
+    padding-top: 3rem;
+}
+
+.pb-3 {
+    padding-bottom: 1.5rem;
+}
+
+.img-card {
+    height: auto;
+    object-fit: cover;
+    border-top-left-radius: 0.25rem;
+    border-top-right-radius: 0.25rem;
+}
+
+.card {
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+    border: none;
+    border-radius: 0.25rem;
+}
+
+.card-title {
+    font-size: 1.1rem;
+    margin-bottom: 0.75rem;
+    color: #689f38; /* A different shade of green for card title */
+}
+
+.btn-primary {
+    background-color: #689f38;
+    border-color: #689f38;
+}
+
+.btn-primary:hover {
+    background-color: #558b2f;
+    border-color: #558b2f;
+}
+
+.img-slide {
+    max-height: 400px;
+    object-fit: contain;
+    background-color: #f8f9fa; /* Light background for the carousel */
+    border-radius: 0.5rem;
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+    opacity: 0.7;
+    background: none;
+    border: none;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    background-color: rgba(0, 0, 0, 0.3);
+    border-radius: 50%;
+    padding: 0.5rem;
+}
+
+.carousel-control-prev:hover,
+.carousel-control-next:hover {
+    opacity: 0.9;
+}
+
+.footer {
+    background-color: #388e3c; /* Another shade of green for the footer */
+    color: white;
+    text-align: center;
+    padding: 1rem 0;
+    margin-top: 2rem;
+}
+
+.footer p {
+    margin: 0;
+    font-size: 0.9rem;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .cabecalho h1 {
+        font-size: 2rem;
+    }
+    .cabecalho h3 {
+        font-size: 1rem;
+    }
+    .navbar-nav {
+        text-align: center;
+    }
+    .img-slide {
+        max-height: 300px;
+    }
+}
+
+/* Estilização da Seção de Contato */
+#contato {
+    padding: 50px 20px;
+    background-color: #f4f4f4;
+    text-align: center;
+}
+
+/* Estilização do Formulário */
+.contact-form {
+    max-width: 500px;
+    margin: 20px auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background-color: #fff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilização dos Grupos de Campos */
+.form-group {
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+/* Estilização dos Rótulos */
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #333;
+}
+
+/* Estilização dos Inputs e Textarea */
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 14px;
+    transition: border-color 0.3s ease;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+    border-color: #007bff;
+    outline: none;
+}
+
+/* Estilização do Botão */
+.submit-btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+.submit-btn:hover {
+    background-color: #0056b3;
+}
